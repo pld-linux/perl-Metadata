@@ -12,8 +12,6 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Metadata/Metadata-%{versi
 Patch0:		%{name}.patch
 BuildRequires:	perl >= 5.005_03-10
 BuildRequires:	perl-TimeDate
-%requires_eq	perl
-Requires:	%{perl_sitearch}
 Requires:	perl-TimeDate
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
