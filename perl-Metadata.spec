@@ -16,7 +16,7 @@ BuildRequires:	perl >= 5.005_03-10
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-TimeDate
 %endif
-BuildRequires:	rpm-perlprov
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 Requires:	perl-TimeDate
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
