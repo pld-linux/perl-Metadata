@@ -7,7 +7,7 @@ Summary:	Metadata - classes for simple metadata
 Summary(pl):	Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
 Version:	0.24
-Release:	6
+Release:	7
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
@@ -37,7 +37,8 @@ metadanych i podklas IAFA Templates i SOIF (Harvest). Powinny byæ
 %patch -p1
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %{!?_without_tests:%{__make} test}
@@ -56,6 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc BUGS Changes README
-%{perl_sitelib}/Metadata
+%{perl_vendorlib}/Metadata
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
