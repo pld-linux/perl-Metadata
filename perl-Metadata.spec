@@ -3,7 +3,7 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Metadata
+%define		pdir	Metadata
 Summary:	Metadata - classes for simple metadata
 Summary(pl):	Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
