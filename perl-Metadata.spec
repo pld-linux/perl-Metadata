@@ -1,6 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+%bcond_without	tests	# do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Metadata
 Summary:	Metadata - classes for simple metadata
@@ -14,7 +15,7 @@ Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	59fb764edce6681e85feb80decafb3fa
 Patch0:		%{name}.patch
 BuildRequires:	perl-devel >= 5.005_03-10
-%if %{?_without_tests:0}%{!?_without_tests:1}
+%if %{with tests}
 BuildRequires:	perl-TimeDate
 %endif
 BuildRequires:	rpm-perlprov
@@ -42,7 +43,7 @@ metadanych i podklas IAFA Templates i SOIF (Harvest). Powinny byæ
 	INSTALLDIRS=vendor
 %{__make}
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
