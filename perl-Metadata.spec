@@ -28,7 +28,7 @@ Zestaw modu³ów Metadata.
 
 %build
 perl Makefile.PL
-make
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
