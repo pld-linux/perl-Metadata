@@ -12,7 +12,7 @@ License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 Patch0:		%{name}.patch
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	perl-devel >= 5.005_03-10
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-TimeDate
 %endif
