@@ -9,7 +9,8 @@ Summary(pl):	Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
 Version:	0.24
 Release:	7
-License:	GPL/Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	59fb764edce6681e85feb80decafb3fa
