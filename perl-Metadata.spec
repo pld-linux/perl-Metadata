@@ -7,7 +7,7 @@ Summary:	Metadata - classes for simple metadata
 Summary(pl):	Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
 Version:	0.24
-Release:	5
+Release:	6
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
@@ -16,6 +16,7 @@ BuildRequires:	perl >= 5.005_03-10
 %if %{?_without_tests:0}%{!?_without_tests:1}
 BuildRequires:	perl-TimeDate
 %endif
+BuildRequires:	rpm-perlprov
 Requires:	perl-TimeDate
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -26,8 +27,10 @@ compatible metadata and subclasses for IAFA Templates, SOIF (Harvest)
 and should be easily extendible to similar (fairly flat) metadata
 formats.
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten zestaw modu³ów udostêpnia implementacjê zgodnych z Dublin Core
+metadanych i podklas IAFA Templates i SOIF (Harvest). Powinny byæ
+³atwo rozszerzalne do podobnych (p³askich) formatów metadanych.
 
 %prep
 %setup -q -n Metadata-%{version}
