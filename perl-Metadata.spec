@@ -3,7 +3,7 @@ Summary:	Metadata perl module
 Summary(pl):	Modu³ perla Metadata
 Name:		perl-Metadata
 Version:	0.24
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -13,6 +13,7 @@ Patch0:		%{name}.patch
 BuildRequires:	perl >= 5.005_03-10
 BuildRequires:	perl-TimeDate
 Requires:	perl-TimeDate
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
