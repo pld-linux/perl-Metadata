@@ -7,7 +7,7 @@ Summary:	Metadata - classes for simple metadata
 Summary(pl):	Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
 Version:	0.24
-Release:	4
+Release:	5
 License:	GPL/Artistic
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
