@@ -4,11 +4,11 @@ Summary(pl):	Modu³ perla Metadata
 Name:		perl-Metadata
 Version:	0.23
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/Metadata/Metadata-%{version}.tar.gz
-Patch:		perl-Metadata.patch
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Metadata/Metadata-%{version}.tar.gz
+Patch0:		perl-Metadata.patch
 BuildRequires:	perl >= 5.005_03-10
 BuildRequires:	perl-TimeDate
 %requires_eq	perl
@@ -32,11 +32,11 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install examples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/Metadata
@@ -59,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-/usr/src/examples/%{name}-%{version}
+%{_prefix}/src/examples/%{name}-%{version}
