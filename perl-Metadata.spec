@@ -6,7 +6,7 @@ Version:	0.24
 Release:	4
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Metadata/Metadata-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/Metadata/Metadata-%{version}.tar.gz
 Patch0:		%{name}.patch
 BuildRequires:	perl >= 5.005_03-10
 BuildRequires:	perl-TimeDate
