@@ -2,8 +2,8 @@
 Summary:	Metadata perl module
 Summary(pl):	Modu³ perla Metadata
 Name:		perl-Metadata
-Version:	0.23
-Release:	4
+Version:	0.24
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
