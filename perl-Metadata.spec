@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	Metadata perl module
 Summary(pl):	Modu³ perla Metadata
 Name:		perl-Metadata
