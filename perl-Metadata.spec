@@ -14,7 +14,7 @@ BuildRequires:	perl-TimeDate
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 Requires:	perl-TimeDate
-BuildRoot:	/tmp/%{name}-%{version}-root
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Metadata set of modules.
