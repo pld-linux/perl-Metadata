@@ -37,7 +37,7 @@ metadanych i podklas IAFA Templates i SOIF (Harvest). Powinny byæ
 
 %prep
 %setup -q -n Metadata-%{version}
-%patch -p1
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
