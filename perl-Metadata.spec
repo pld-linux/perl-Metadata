@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Metadata
 Summary:	Metadata - classes for simple metadata
-Summary(pl):	Metadata - klasy dla prostych metadanych
+Summary(pl.UTF-8):   Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
 Version:	0.24
 Release:	8
@@ -30,10 +30,10 @@ compatible metadata and subclasses for IAFA Templates, SOIF (Harvest)
 and should be easily extendible to similar (fairly flat) metadata
 formats.
 
-%description -l pl
-Ten zestaw modu³ów udostêpnia implementacjê zgodnych z Dublin Core
-metadanych i podklas IAFA Templates i SOIF (Harvest). Powinny byæ
-³atwo rozszerzalne do podobnych (p³askich) formatów metadanych.
+%description -l pl.UTF-8
+Ten zestaw moduÅ‚Ã³w udostÄ™pnia implementacjÄ™ zgodnych z Dublin Core
+metadanych i podklas IAFA Templates i SOIF (Harvest). Powinny byÄ‡
+Å‚atwo rozszerzalne do podobnych (pÅ‚askich) formatÃ³w metadanych.
 
 %prep
 %setup -q -n Metadata-%{version}
