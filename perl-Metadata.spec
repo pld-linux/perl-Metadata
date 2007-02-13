@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Metadata
 Summary:	Metadata - classes for simple metadata
-Summary(pl.UTF-8):   Metadata - klasy dla prostych metadanych
+Summary(pl.UTF-8):	Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
 Version:	0.24
 Release:	8
