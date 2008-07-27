@@ -8,7 +8,7 @@ Summary:	Metadata - classes for simple metadata
 Summary(pl.UTF-8):	Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
 Version:	0.24
-Release:	8
+Release:	9
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
