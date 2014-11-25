@@ -1,9 +1,9 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Metadata
+%include	/usr/lib/rpm/macros.perl
 Summary:	Metadata - classes for simple metadata
 Summary(pl.UTF-8):	Metadata - klasy dla prostych metadanych
 Name:		perl-Metadata
@@ -15,11 +15,12 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{version}.tar.gz
 # Source0-md5:	59fb764edce6681e85feb80decafb3fa
 Patch0:		%{name}.patch
+URL:		http://search.cpan.org/dist/Metadata-/
 BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov
 %if %{with tests}
 BuildRequires:	perl-TimeDate
 %endif
-BuildRequires:	rpm-perlprov
 Requires:	perl-TimeDate
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -53,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
